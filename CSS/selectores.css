@@ -1,0 +1,36 @@
+/* * es un selector unirversal, selecciona a todos los elementos */
+
+* {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+/* Los selectores descendentes seleccionan etiquetas dentro de un div */
+
+div p {
+    font-size:20px ;
+    color: black;
+}
+
+p a {
+    color: red;
+}
+
+/* . Sirve para seleccionar clase */
+
+.grande {
+    font-size:28px ;
+}
+
+/* # Sirve para seleccionar id */
+
+#grande {
+    font-size:38px ;
+}

@@ -1,0 +1,25 @@
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* El estado del enlace mientras se pasa el mouse por encima */
+a:hover{
+    background: #f9a03f;
+    color: #fff
+}
+
+/* Enlace sin visitar */
+a:link {
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+a:visited {
+    color:grey;
+}
+
+/* Estado del enlace mientras se está haciendo click */
+a:active {
+    text-decoration: underline  ;
+}

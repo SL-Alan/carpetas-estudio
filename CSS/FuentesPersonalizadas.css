@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "PTSansCaption-Regular";
+    src: url('Fonts/PTSansCaption-Regular.ttf');
+}
+
+@font-face {
+    font-family: "PTSansCaption-Bold";
+    src: url('Fonts/PTSansCaption-Bold.ttf');
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}

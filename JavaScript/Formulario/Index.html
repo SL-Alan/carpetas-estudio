@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Estilos.css">
+                <title>Formulario</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <form action="" class="formulario" id="formulario" name="formulario">
+                <div class="contenedor-inputs">
+                    <input type="text" name="nombre" placeholder="Nombre:">
+                    <input type="email" name="correo" placeholder="Correo:">
+
+                    <div class="sexo">
+                        <input type="radio" name="sexo" id="hombre" value="hombre">
+                        <label class="label-radio hombre" for="hombre">Hombre</label>
+
+                        <input type="radio" name="sexo" id="mujer" value="mujer">
+                        <label class="label-radio mujer" for="mujer">Mujer</label>
+                    </div>
+
+                    <div class="términos">
+                        <input type="checkbox" name="términos" id="términos">
+                        <label for="términos">Acepto los términos y condiciones.</label>
+                    </div>
+
+                    <ul class="error">
+                    </ul>
+                </div>
+
+                <input type="submit" class="btn" value="Regístrate">
+            </form>
+        </div>
+
+        <script src="Formulario.js"></script>
+    </body>
+</html>

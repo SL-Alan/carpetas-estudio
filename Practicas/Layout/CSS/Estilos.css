@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+        background: #4a465b;
+}
+
+.Contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+header {
+    background: #FFF;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    background: #000;
+    color: white;
+}
+
+.Main {
+    width: 70%;
+    background: white;
+    float: left;
+}
+
+.Main .Imagen {
+    width: 100%;
+}
+
+.Main .Imagen img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.Main .Post {
+    padding: 40px;
+}
+
+.Main .Post article h2 {
+    margin-bottom: 20px;
+}
+
+.Main .Post article p {
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+aside {
+    width: 30%;
+    background: #161f26;
+    padding: 20px;
+    color: white;
+    float: left;
+    }
+
+aside .widget {
+    margin: 20px;    
+}
+
+aside .widget .titulo {
+    color: #FF8000;
+    border-bottom: 1px solid #FF8000;
+    margin-bottom: 10px;
+}
+
+aside .widget ul {
+    list-style: none;
+}
+
+aside .widget ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 7px 0;
+}
+
+aside .widget ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover {
+    color: #8f8f8f;
+}
+
+aside .widget p {
+    line-height: 27px;
+}
+
+footer {
+    width: 70%;
+    /* overflow: hidden; */
+    clear: both;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .Main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}

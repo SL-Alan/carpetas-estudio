@@ -1,0 +1,24 @@
+body {
+    font-size: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Unidades Relativas:
+    px - Pixel 
+    em - Relativa al tamaño de fuente que tenga su elemento padre o el más cercano
+    rem - Relativa al tamaño de fuente especificado en el body
+    % - Porcentaje */
+
+.padre {
+    font-size: 1.25em;
+}
+
+.hijo {
+    width: 10em;
+    height: 10em;
+    background: black;
+    color: white;
+}

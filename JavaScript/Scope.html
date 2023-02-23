@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scope de Javascript</title>
+    </head>
+    <body>
+        <script>
+            // ----- VARIABLE LOCAL ----- Son las que fueron creadas dentro de una función o una función anidada
+            // function saludo (){
+            //     var texto= 'Hola mundo';
+            //     console.log(texto);
+            // }
+            // saludo();
+
+            // ----- VARIABLE LOCAL CON FUNCIONES ANIDADAS----- El scope funciona por niveles, si no encuentra una variable en el mismo nivel subirá de nivel hacia afuera y así sucesivamente. Podemos buscar variables desde dentro hacia afuera.
+            // function saludo(){
+            //     var texto= 'Hola mundo';
+            //     function mensaje(){
+            //         console.log(texto);
+            //     }
+            //     mensaje();
+            // }
+            // saludo();
+
+            // ----- VARIABLE GLOBAL-----
+            // var texto='Hola mundo';
+
+            // function saludo(){
+            //     texto= 'Hola Mundo modificado';
+            //     console.log(texto);
+            // }
+            // saludo();
+
+            //----- IMPORTANTE si quitamos la palabra var se convierte en una variable global si está dentro de una función
+            // function saludo(){
+            //     mensaje= 'Hola mundoooo';
+            // }                
+            // saludo();
+            // console.log(mensaje);
+
+            // ----- FUNCIÓN AUTOINVOCADA -----Sirve para proteger código
+                (function(){
+                    alert('Hola')
+                }())
+
+        </script>
+    </body>
+</html>

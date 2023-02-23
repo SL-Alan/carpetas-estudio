@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Normalize.css">
+        <link rel="stylesheet" href="CSS/fontawesome-free-6.3.0-web/css/all.css">
+        <link rel="stylesheet" href="CSS/Estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>Formulario PRO</title>
+    </head>
+    <body>
+        <main>
+            <form action="" class="formulario" id="formulario">
+                <!-- ---- GRUPO NOMBRE -->
+                <div class="formulario-grupo" id="nombre">
+                    <label for="nombre" class="formulario-label">Nombre y apellido</label>
+                    <div class="formulario-grupo-input">
+                        <input type="text" class="formulario-input" name="nombre" id="nombre" placeholder="John Doe">
+                        <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario-input-error">Ingrese su nombre.</p>
+                </div>
+
+                <!-- ---- GRUPO CORREO -->
+                <div class="formulario-grupo" id="correo">
+                    <label for="correo" class="formulario-label">Correo</label>
+                    <div class="formulario-grupo-input">
+                        <input type="email" class="formulario-input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario-input-error">Ingrese un correo válido.</p>
+                </div>
+                
+                <!-- ---- GRUPO CONTRASEÑA -->
+                <div class="formulario-grupo" id="password">
+                    <label for="password" class="formulario-label">Password</label>
+                    <div class="formulario-grupo-input">
+                        <input type="password" class="formulario-input" name="password" id="password">
+                        <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario-input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </div>
+            
+                <!-- ---- GRUPO CONTRASEÑA2 -->
+                <div class="formulario-grupo" id="password2">
+                    <label for="password2" class="formulario-label">Repetir contraseña</label>
+                    <div class="formulario-grupo-input">
+                        <input type="password" class="formulario-input" name="password2" id="confirm-password">
+                        <i class="formulario-validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario-input-error">Ámbas contraseñas tienen que ser iguales.</p>
+                </div>
+                
+                <!-- ---- GRUPO TÉRMINOS Y CONDICIONES -->
+                <div class="formulario-grupo-términos" id="términos">
+                    <label class="formulario-label">
+                        <input type="checkbox" class="formulario-términos" name="términos" id="términos">
+                        Acepto los términos y condiciones.
+                    </label>
+                    
+                    <div class="formulario-mensaje" id="formulario-mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor complete el formulario correcamente.</p>
+                    </div>
+                    <div class="formulario-grupo formulario-grupo-btn-enviar">
+                        <input type="submit" value="Enviar" class="formulario-botón">
+                        <p class="formulario-mensaje-éxito" id="formulario-mensaje-éxito">El formulario se envió exitosamente.</p>
+                    </div>
+                </div>                                
+            </form>
+        </main>
+
+        <script src="Formulario.js"></script>
+    </body>
+</html>

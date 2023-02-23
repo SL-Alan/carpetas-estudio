@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos</title>
+    </head>
+    <body>
+        <!-- <button onclick="saludo()">Saludo</button> Botón modelo básico -->
+        <button id="btn-saludar">Saludos</button>
+        <script>
+            // Existen 3 modelos de eventos diferentes:
+        //         -Modelo básico de eventos.
+        //             Características limitadas.
+        //             Funciona en todos los navegadores.
+                
+            function saludo(){
+                alert('Hola');
+            }
+
+        //         -Modelo de eventos estándar.
+        //     Podemos hacer mas cosas con el.
+        //     Todos los navegadores lo soportan.
+        
+        var btnSaludar= document.getElementById('btn-saludar');
+        btnSaludar.addEventListener('click', saludo);
+        // btnSaludar.addEventListener('click', function(){
+        //     Se pueden llamar funciones anónimas, en esta parte iria el código
+        // });
+        
+        btnSaludar.removeEventListener('click', saludo);
+                    // -Modelo de eventos de Internet Explorer.
+                    //     Modelo creado por Microsoft exclusivamente para IE.
+
+        // Eventos más utilizados:
+            // -click
+            // -focus
+            // -blur
+            // -change
+            // -onload
+            // -mouseover
+            // -mouseout
+            // -resize
+            // -submit
+
+        </script>
+    </body>
+</html>

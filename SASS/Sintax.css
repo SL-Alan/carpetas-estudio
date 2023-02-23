@@ -1,0 +1,16 @@
+body {
+  background: #F2f2f2;
+}
+
+.articulo {
+  background: #FFF;
+}
+.articulo .titulo {
+  color: #000;
+}
+.articulo .autor {
+  color: #000;
+}
+.articulo p a {
+  text-decoration: none;
+}/*# sourceMappingURL=Sintax.css.map */

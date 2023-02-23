@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    height: 700px;
+    max-width: 700px;
+    background: #212d40;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow:row wrap ; Contiene las dos funciones anteriores */
+    justify-content: space-around;
+    align-items: top;
+    /* align-content: center; Funciona cuando hay más de una línea de elementos */
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #FFF;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 1 1 auto; /* Contiene las tres funciones anteriores */
+}
+
+.dos {
+    align-self: stretch;
+    height: auto;
+}

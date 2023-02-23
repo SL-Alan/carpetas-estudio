@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Métodos y propiedades para los arreglos</title>
+    </head>
+    <body>
+        <script>
+            var amigos= ['Luis','Ariel', 'Alan', 'Nahuel', 'Laura'];
+            
+        // -------- MÉTODO LENGTH --------
+        // document.write(amigos.length);
+        
+        // -------- MÉTODO JOIN --------
+            // var cadenaTexto= amigos.join(' ** ' ); Nos sirve para juntar nuestro arreglo y mostrarlo en una cadena de texto
+            // document.write(cadenaTexto);
+
+        // -------- MÉTODO POP Y PUSH -------- Sirve para eliminar o agregar valores en la última posición del arreglo
+        // amigos.pop();
+        // amigos.push('Nicolas');
+        // console.log(amigos);
+        
+        
+        // -------- MÉTODO SHIFT Y UNSHIFT -------- Sirve para eliminar o agregar valores en la primera posición del arreglo
+        // amigos.shift();
+        // amigos.unshift('Patricio');
+        // console.log(amigos);
+        
+        // -------- MÉTODO CONCAT -------- Sirve para juntar dos arreglos
+        // var amigos2= ['Nicolas', 'Patricio'];
+        // var todosMisAMigos= amigos.concat(amigos2);
+        // document.write(todosMisAMigos);
+        
+        // -------- MÉTODO SORT y REVERSE -------- Sirve para ordenar cadenas de texto, no números
+        amigos.sort();
+        amigos.reverse();
+        console.log(amigos);
+
+        </script>
+    </body>
+</html>

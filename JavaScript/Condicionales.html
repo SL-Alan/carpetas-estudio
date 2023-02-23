@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Condicionales</title>
+    </head>
+    <body>
+        
+        <script>
+            // if(condicion){
+            //     código
+            // }
+
+            // var edad= 15;
+            // if(edad>=18){
+            //     document.write('Eres mayor de edad');
+            // } else {
+            //     document.write('Eres menor de edad.')
+            // }
+
+            var pais= 'Argentina';
+            // if (pais=='México') {
+            //     document.write('Eres mexicano');
+            // } else if (pais == 'España') {
+                //     document.write('Eres español')
+                // } else {
+                    //     document.write('No sabemos de donde eres')
+                    // }
+                    
+                    switch(pais) {
+                        case 'México':
+                            document.write('Eres mexicano.');
+                            break;
+                        case 'España':
+                            document.write ('Eres español.');
+                            break;
+                        case 'Argentina':
+                            document.write('Eres Argentino.');
+                            break;
+                        default:
+                            document.write('No sabemos de donde eres.')
+                            break;
+            }
+
+        </script>
+        
+    </body>
+</html>

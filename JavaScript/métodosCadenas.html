@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Métodos y propiedades para Cadenas de Texto</title>
+    </head>
+    <body>
+        <script>
+            var nombre='Carlos Arturo';
+            var numeroCaracteres= nombre.length;
+            // console.log(nombre + ' tiene ' +  numeroCaracteres + ' carácteres.');
+            
+            // var segundoNombre= nombre.substring(7, 13); Aclaras desde que posición hasta qué posición cortar
+            // console.log(segundoNombre);
+
+            // var segundoNombre= nombre.substr(7,6); Aclaras desde que posición cuantos carácteres cortar
+            // console.log(segundoNombre);
+
+            // var nuevoNombre= nombre.replace('Arturo', 'Luis');
+            // console.log(nuevoNombre);
+
+            // nombre= nombre.toUpperCase();
+            // nombre= nombre.toLowerCase();
+            // console.log(nombre);
+
+            // var posicion= nombre.indexOf('o');
+            var posicion= nombre.lastIndexOf('o');
+            console.log(posicion);
+        </script>
+    </body>
+</html>

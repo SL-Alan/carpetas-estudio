@@ -1,0 +1,16 @@
+body {
+    /* background:black; para darle color al fondo */
+
+    background: url('Imágenes/fondo.jpg');
+
+    /* background-repeat:no-repeat; para repetir una sola vez el fondo si es muy grande.
+    backgroung-repeat:repeat-x; para repetir solamente en el eje x.
+    background-repeat:repeat-y; para repetir solamenteen el eje y. 
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* deja el fondo fijo, se mueve el texto, por defecto viene scroll */
+    background-position: center center;
+
+    /* todo se puede resumir en background: url('Imágenes/fondo.jpg') no-repeat fixed cover, el tamaño se hace en otra lìnea */
+}
